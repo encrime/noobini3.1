@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Screens intéressants</title>
+<style>
+    :root {
+        --bg: #0b0e14;
+        --bg-soft: #101521;
+        --text: #e6e6e6;
+        --muted: #9aa4b2;
+        --accent: #6aa1ff;
+        --border: #1c2333;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    .global-warning { background: linear-gradient(180deg, #2d2208, #1a1406); color: #ffd966; border-bottom: 2px solid #a67c00; padding: 10px 16px; text-align: center; font-size: 13px; line-height: 1.45; }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 32px 20px 48px; }
+    h1 { font-size: 22px; font-weight: 700; margin: 0 0 8px; }
+    .lead { color: var(--muted); font-size: 14px; margin: 0 0 24px; line-height: 1.5; }
+    .btn-home { display: inline-flex; align-items: center; background: #132a1f; color: #c8f5dc; border: 1px solid #2d6a4f; border-radius: 8px; padding: 8px 10px; text-decoration: none; font-size: 14px; font-weight: 600; }
+    .btn-home:hover { background: #1a3d2a; border-color: #52b788; color: #e8fff0; }
+    .page-nav { margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+    .screen-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 24px; }
+    .screen-list li { margin: 0; }
+    .screen-item {
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 12px;
+        overflow: hidden;
+    }
+    .screen-item img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .screen-item--sm img {
+        max-width: 78%;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .screen-item .caption {
+        margin: 10px 4px 0;
+        font-size: 13px;
+        color: var(--muted);
+    }
+    .screen-item .caption a {
+        color: var(--accent);
+        text-decoration: none;
+    }
+    .screen-item .caption a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="global-warning" role="alert">Sur les pages d’export (kingkong, jandel, vbv), les images intégrées peuvent ne pas s’afficher — ici les captures sont affichées volontairement.</div>
+<div class="wrap">
+    <nav class="page-nav" aria-label="Navigation"><a href="index.html" class="btn-home">Accueil</a></nav>
+    <h1>Screens intéressants</h1>
+    <p class="lead">12 captures Imgur (liens présents dans le fil). Tu peux dupliquer un bloc <code>.screen-item</code> pour en ajouter.</p>
+    <ul class="screen-list" id="screens">
+        <li class="screen-item">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/tovcZtj.png" alt="Capture Imgur tovcZtj" loading="lazy" decoding="async">
+            <p class="caption">Imgur — tovcZtj · <a href="https://i.imgur.com/tovcZtj.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/vh9HerX.png" alt="Capture Imgur vh9HerX" loading="lazy" decoding="async">
+            <p class="caption">Imgur — vh9HerX · <a href="https://i.imgur.com/vh9HerX.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/MvvgTnp.png" alt="Capture Imgur MvvgTnp" loading="lazy" decoding="async">
+            <p class="caption">Imgur — MvvgTnp · <a href="https://i.imgur.com/MvvgTnp.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/IkXznQZ.png" alt="Capture Imgur IkXznQZ" loading="lazy" decoding="async">
+            <p class="caption">Imgur — IkXznQZ · <a href="https://i.imgur.com/IkXznQZ.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/MUOeeyI.png" alt="Capture Imgur MUOeeyI" loading="lazy" decoding="async">
+            <p class="caption">Imgur — MUOeeyI · <a href="https://i.imgur.com/MUOeeyI.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/JUa0D9D.png" alt="Capture Imgur JUa0D9D" loading="lazy" decoding="async">
+            <p class="caption">Imgur — JUa0D9D · <a href="https://i.imgur.com/JUa0D9D.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/RL0hcB6.png" alt="Capture Imgur RL0hcB6" loading="lazy" decoding="async">
+            <p class="caption">Imgur — RL0hcB6 · <a href="https://i.imgur.com/RL0hcB6.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/19FAqUF.png" alt="Capture Imgur 19FAqUF" loading="lazy" decoding="async">
+            <p class="caption">Imgur — 19FAqUF · <a href="https://i.imgur.com/19FAqUF.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/LXcNlIW.png" alt="Capture Imgur LXcNlIW" loading="lazy" decoding="async">
+            <p class="caption">Imgur — LXcNlIW · <a href="https://i.imgur.com/LXcNlIW.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/Wpp1XMQ.png" alt="Capture Imgur Wpp1XMQ" loading="lazy" decoding="async">
+            <p class="caption">Imgur — Wpp1XMQ · <a href="https://i.imgur.com/Wpp1XMQ.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/fkowh0n.png" alt="Capture Imgur fkowh0n" loading="lazy" decoding="async">
+            <p class="caption">Imgur — fkowh0n · <a href="https://i.imgur.com/fkowh0n.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+        <li class="screen-item screen-item--sm">
+            <img referrerpolicy="no-referrer" src="https://i.imgur.com/uBQhBxX.png" alt="Capture Imgur uBQhBxX" loading="lazy" decoding="async">
+            <p class="caption">Imgur — uBQhBxX · <a href="https://i.imgur.com/uBQhBxX.png" target="_blank" rel="noopener">ouvrir l’original</a></p>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
