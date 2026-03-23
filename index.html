@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conversations exportées</title>
+<style>
+    :root {
+        --bg: #0b0e14;
+        --bg-soft: #101521;
+        --text: #e6e6e6;
+        --muted: #9aa4b2;
+        --accent: #6aa1ff;
+        --border: #1c2333;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; min-height: 100%; background: var(--bg); color: var(--text); font-family: -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+    .global-warning { background: linear-gradient(180deg, #2d2208, #1a1406); color: #ffd966; border-bottom: 2px solid #a67c00; padding: 10px 16px; text-align: center; font-size: 13px; line-height: 1.45; }
+    .wrap { max-width: 560px; margin: 0 auto; padding: 32px 20px 48px; }
+    h1 { font-size: 22px; font-weight: 700; margin: 0 0 8px; }
+    .lead { color: var(--muted); font-size: 14px; margin: 0 0 28px; line-height: 1.5; }
+    .links { display: grid; gap: 12px; }
+    .links a {
+        display: block;
+        background: var(--bg-soft);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 16px 18px;
+        color: var(--text);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 16px;
+        transition: border-color 0.15s ease, background 0.15s ease;
+    }
+    .links a:hover { border-color: var(--accent); background: #121826; }
+    .links a span { display: block; font-size: 12px; font-weight: 400; color: var(--muted); margin-top: 6px; }
+    .btn-home { display: inline-flex; align-items: center; background: #132a1f; color: #c8f5dc; border: 1px solid #2d6a4f; border-radius: 8px; padding: 8px 10px; text-decoration: none; font-size: 14px; font-weight: 600; }
+    .btn-home:hover { background: #1a3d2a; border-color: #52b788; color: #e8fff0; }
+    .home-nav { margin: 0 0 20px; }
+</style>
+</head>
+<body>
+<div class="global-warning" role="alert">Avertissement : les images ne s’affichent pas</div>
+<div class="wrap">
+    <nav class="home-nav" aria-label="Navigation"><a href="index.html" class="btn-home">Accueil</a></nav>
+    <h1>Conversations</h1>
+    <p class="lead">Choisis une conversation pour ouvrir l’export HTML.</p>
+    <nav class="links" aria-label="Conversations">
+        <a href="kingkong.html">Kingkong<span>kingkong.html</span></a>
+        <a href="jandel.html">Jandel<span>jandel.html</span></a>
+        <a href="vbv.html">vbv<span>vbv.html</span></a>
+    </nav>
+</div>
+</body>
+</html>
