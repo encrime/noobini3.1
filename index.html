@@ -36,13 +36,19 @@
     .links a span { display: block; font-size: 12px; font-weight: 400; color: var(--muted); margin-top: 6px; }
     .btn-home { display: inline-flex; align-items: center; background: #132a1f; color: #c8f5dc; border: 1px solid #2d6a4f; border-radius: 8px; padding: 8px 10px; text-decoration: none; font-size: 14px; font-weight: 600; }
     .btn-home:hover { background: #1a3d2a; border-color: #52b788; color: #e8fff0; }
-    .home-nav { margin: 0 0 20px; }
+    .btn-screens { display: inline-flex; align-items: center; background: var(--bg-soft); color: var(--text); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; text-decoration: none; font-size: 14px; font-weight: 600; }
+    .btn-screens:hover { border-color: var(--accent); background: #121826; }
+    .home-nav { margin: 0 0 20px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
 </style>
 </head>
 <body>
 <div class="global-warning" role="alert">Avertissement : les images ne s’affichent pas</div>
 <div class="wrap">
-    <nav class="home-nav" aria-label="Navigation"><a href="index.html" class="btn-home">Accueil</a></nav>
+    <nav class="home-nav" aria-label="Navigation">
+        <a href="index.html" class="btn-home">Accueil</a>
+        <a href="screens.html" class="btn-screens">Screens intéressants (Imgur)</a>
+        <a href="screens-discord.html" class="btn-screens">Photos des exports Discord</a>
+    </nav>
     <h1>Conversations</h1>
     <p class="lead">Choisis une conversation pour ouvrir l’export HTML.</p>
     <nav class="links" aria-label="Conversations">
